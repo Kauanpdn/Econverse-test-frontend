@@ -1,0 +1,124 @@
+@use "../../styles/variaveis" as *;
+
+.header {
+    width: 1280px;
+    margin: 0 auto;
+
+
+    .container {
+        max-width: 1280px;
+        padding: 0 24px;
+    }
+
+    /* 🔹 Top Bar */
+    &__top {
+        background: $background-light;
+        font-size: 14px;
+        color: $cinza-medio;
+        border-bottom: 2px solid rgba(240, 240, 240, 1);
+
+        &-content {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding: 8px 0;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 0;
+
+        & span {
+            font-weight: 600;
+        }
+    }
+
+    strong {
+        color: $azul;
+    }
+
+    /* 🔹 Main */
+    &__main {
+        background: $background-light;
+        padding: 20px 0;
+
+        &-content {
+            display: flex;
+            align-items: center;
+
+        }
+    }
+
+    &__logo {
+        width: 139px;
+        height: 41.3px;
+    }
+
+    &__search {
+        width: 630px;
+        height: 48px;
+        margin: 0 auto;
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 12px 16px;
+            border-radius: 10px;
+            border: none;
+            background: rgba(246, 245, 242, 1);
+            outline: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: $cinza-medio;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+        }
+    }
+
+    &__icons img{
+        width: 216px;
+        height: 32px;
+    }
+
+    /* 🔹 Bottom Menu */
+    &__bottom {
+        border: 2px solid rgba(240, 240, 240, 1);
+        background: $background-light;
+        padding: 10px 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        padding: 0 61px;
+        font-size: 12px;
+        font-weight: 600;
+        color: $cinza-medio;
+        gap: 91px;
+
+        span {
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                color: $azul;
+            }
+        }
+
+        .highlight {
+            color: $azul;
+            font-weight: 600;
+        }
+    }
+}
