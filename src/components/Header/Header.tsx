@@ -13,8 +13,8 @@ import {
 } from "lucide-react";
 
 //importando imagens 
-import Logo from "../../assets/Logo.png";
-import iconsHeader from "../../assets/iconsHeader.png";
+import Logo from "../../assets/headerImg/Logo.png";
+import iconsHeader from "../../assets/headerImg/iconsHeader.png";
 
 const Header = () => {
     return (
