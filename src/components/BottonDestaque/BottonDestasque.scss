@@ -1,0 +1,38 @@
+@use "../../styles/variaveis" as *;
+
+.btn {
+    height: 50px;
+    padding: 7px 49px; // top/bottom 7px | left/right 49px
+    border-radius: 5px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; // espaço interno (caso tenha ícone futuramente)
+
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &--primary {
+        background: $amarelo;
+        color: #000;
+
+        &:hover {
+            background: #eab308;
+        }
+    }
+
+    &--outline {
+        background: transparent;
+        border: 2px solid $amarelo;
+        color: $amarelo;
+
+        &:hover {
+            background: $amarelo;
+            color: #000;
+        }
+    }
+}

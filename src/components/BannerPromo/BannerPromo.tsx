@@ -1,5 +1,6 @@
 
 import "../BannerPromo/BannerPromo.scss";
+import ButtonDestaque from "../BottonDestaque/BottonDestaque";
 
 const BannerPromo = () => {
     return (
@@ -11,7 +12,8 @@ const BannerPromo = () => {
                 <div className="container">
                 <h1>Venha conhecer nossas<br></br> promoções</h1>
                 <p><span>50% off</span> nos produtos</p>
-                <button type="button">Ver produtos</button>
+                <ButtonDestaque>Ver produtos</ButtonDestaque>
+
                 </div>
             </div>
         </section>
