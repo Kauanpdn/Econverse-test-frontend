@@ -1,22 +1,34 @@
-import "./ProductCard.scss";
-import iphone from "../../assets/iphone.png";
+import "./ProductCard.css";
 
-interface Props {
-    installment: string;
-}
-
-const ProductCard = ({
-    installment,
-}: Props) => {
+export function ProductCard({ product, onClick }) {
     return (
         <div className="product-card">
-            <img src={iphone} alt="Produto" />
+            <img src={product.image} alt={product.name} />
 
-            <span className="installment">{installment}</span>
+            <p className="description">
+                {product.description}
+            </p>
 
-            <button>COMPRAR</button>
+            <p className="old-price">
+                R$ {product.oldPrice?.toFixed(2)}
+            </p>
+
+            <p className="price">
+                R$ {product.price.toFixed(2)}
+            </p>
+
+            <p className="installments">
+                ou 2x de R$ {(product.price / 2).toFixed(2)} sem juros
+            </p>
+
+            <span className="free-shipping">Frete grátis</span>
+
+            <button
+                className="buy-button"
+                onClick={() => onClick(product)}
+            >
+                COMPRAR
+            </button>
         </div>
     );
-};
-
-export default ProductCard;
+}

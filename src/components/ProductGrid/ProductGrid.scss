@@ -1,0 +1,18 @@
+.products-section {
+    padding: 60px 80px;
+    background: #f5f5f5;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #3b44b1;
+    font-weight: 600;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
