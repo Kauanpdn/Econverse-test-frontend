@@ -8,7 +8,7 @@ import Categorias from './components/CategoriaCard/Categorias';
 // import ProductSection from './components/ProductSection/ProductSection';
 // import { products } from './data/product';
 
-import { ProductGrid } from "./components/ProductGrid/ProdutoGrid";
+import { ProductGrid } from "./components/ProductGrid/ProductGrid";
 import { ProductModal } from "./components/ProductModal/ProductModal";
 
 import CategoryTable from './components/CategoryTable/CategoryTable';

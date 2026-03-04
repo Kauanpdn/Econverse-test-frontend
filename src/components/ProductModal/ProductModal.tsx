@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./ProductModal.scss";
 
+interface ProductModalProps {
+  product: Product | null;
+  onClose: () => void;
+}
+
 export function ProductModal({ product, onClose }) {
     const [quantity, setQuantity] = useState(1);
 

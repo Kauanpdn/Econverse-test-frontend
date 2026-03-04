@@ -1,10 +1,24 @@
 import { useEffect, useState } from "react";
-import { getProducts } from "../services/productsService";
-import { ProductCard } from "./ProductCard";
-import "./ProductGrid.css";
+import { getProducts } from "../../service/api";
+import { ProductCard } from "../ProductCard/ProductCard";
+import "./ProductGrid.scss";
 
-export function ProductGrid({ onSelectProduct }) {
-  const [products, setProducts] = useState([]);
+interface Product {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  oldPrice?: number;
+  image: string;
+}
+
+interface ProductGridProps {
+  onSelectProduct: (product: Product) => void;
+}
+
+
+export function ProductGrid({ onSelectProduct } : ProductGridProps) {
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     async function loadProducts() {
