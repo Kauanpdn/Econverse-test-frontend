@@ -1,0 +1,139 @@
+@use "../../styles/variaveis" as *;
+
+.footer {
+    font-family: "Inter", sans-serif;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    /* ================= NEWSLETTER ================= */
+
+    &__newsletter {
+        background: #2e1f53;
+        color: $texto-cor;
+        padding: 56px 0;
+
+        .newsletter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .newsletter__left {
+            max-width: 500px;
+
+            h2 {
+                font-size: 32px;
+                margin-bottom: 12px;
+                font-weight: 600;
+            }
+
+            p {
+                opacity: 0.85;
+                line-height: 1.5;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
+        .newsletter__right {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            min-width: 520px;
+        }
+
+        .newsletter__top {
+            display: flex;
+            gap: 16px;
+
+            input {
+                flex: 1;
+                padding: 12px 16px;
+                border-radius: 6px;
+                border: none;
+                outline: none;
+            }
+        }
+
+        .newsletter__checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+    }
+
+    /* ================= MAIN ================= */
+
+    &__main {
+        background: rgba(244, 244, 244, 1);
+        padding: 56px 0;
+    }
+
+    .footer__grid {
+        display: grid;
+        grid-template-columns: 300px 1px 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    .footer__logo {
+        width: 160px;
+        margin-bottom: 16px;
+    }
+
+    .footer__brand p {
+        max-width: 260px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: $cinza-escuro;
+    }
+
+    .footer__socials {
+        width: 120px;
+    }
+
+    .footer__divider {
+        background: $cinza-medio;
+        width: 1px;
+        height: 100%;
+    }
+
+    .footer__links {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        h4 {
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 8px;
+                font-size: 14px;
+                color: $cinza-escuro;
+                cursor: pointer;
+            }
+        }
+    }
+
+    /* ================= BOTTOM ================= */
+
+    &__bottom {
+        background: $background-light;
+        padding: 16px 0;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

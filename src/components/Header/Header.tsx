@@ -4,9 +4,6 @@ import "./Header.scss";
 //Importando icones
 import {
     Search,
-    Heart,
-    User,
-    ShoppingCart,
     Truck,
     ShieldCheck,
     CreditCard,

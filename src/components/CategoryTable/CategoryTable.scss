@@ -1,0 +1,29 @@
+@use "../../styles/variaveis" as *;
+
+.category-table {
+    width: 100%; // 👈 ocupa todo espaço do container
+    height: 40px; // 👈 altura exata pedida
+    display: flex;
+    border: 1px solid $cinza-medio;
+    background: $background-light;
+    margin: 25px 0 40px; // sem auto
+}
+
+.category-table button {
+    flex: 1;
+    height: 100%; // 👈 botão ocupa 40px
+    border: none;
+    background: $background-light;
+    font-size: 14px;
+    cursor: pointer;
+    border-right: 1px solid $cinza-medio;
+}
+
+.category-table button:last-child {
+    border-right: none;
+}
+
+.category-table button.active {
+    color: $azul;
+    font-weight: 600;
+}

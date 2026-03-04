@@ -1,0 +1,34 @@
+@use "../../styles/variaveis" as *;
+
+.marcas {
+    background-color: $background-light;
+    padding-top: 80px;
+    text-align: center;
+
+    &__titulo {
+        font-size: 32px;
+        font-weight: 700;
+        color: $azul; // ajuste para sua cor padrão
+        margin-bottom: 60px;
+    }
+
+    &__container {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+.marca__imagem {
+    width: 200px; // ajuste se precisar
+    height: 200px;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-6px);
+    }
+}

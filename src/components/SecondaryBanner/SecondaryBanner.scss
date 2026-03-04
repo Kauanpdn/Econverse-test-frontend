@@ -1,0 +1,57 @@
+@use "../../styles/variaveis" as *;
+
+.secondary-banner {
+    position: relative;
+    width: 634px; // 👈 largura fixa
+    height: 350px; // 👈 altura fixa
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 48px;
+    background-size: cover;
+    background-position: center;
+    color: $texto-cor;
+    flex-shrink: 0; // impede encolher
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+    }
+
+    &__content {
+        position: relative;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 320px; 
+        }
+
+        button {
+            width: 160px;
+            height: 45px;
+            background-color: $amarelo;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}

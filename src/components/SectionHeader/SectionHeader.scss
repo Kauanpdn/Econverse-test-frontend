@@ -1,0 +1,26 @@
+@use "../../styles/variaveis" as *;
+
+.section-header {
+    margin-bottom: 30px;
+    text-align: center;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+        color: $azul;
+    }
+
+    .line {
+        height: 1px;
+        background: $cinza-medio;
+        flex: 1;
+        max-width: 350px;
+    }
+}
